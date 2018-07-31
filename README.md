@@ -1,14 +1,7 @@
 ## Git Demo
+# Git Cheat Sheet
+### Basic commands
 
-
-## Some othe changes
-
-### Hi Good Morning
-694b62775a6f984895ce3af91c09f2aa
-
-
-Git Cheat Sheet
-Basic commands
 git init Creates a new git repository in the directory
 
 git add <file name> Adds a specific file to staging
@@ -19,7 +12,7 @@ git commit -m 'Commit message here' Commits the file changes in staging and prov
 
 git diff **Analyze the differences between old files and ones that have been added to staging **
 
-Branching
+### Branching
 git branch View all local branches
 
 git checkout -b <branch name> Create a new branch and check into it
@@ -34,27 +27,27 @@ git push origin <branch name> Push a branch to a remote repository
 
 git merge <branch name> Merge branch into master branch (ensure that you're inside the master branch)
 
-Stashing
+### Stashing
 git stash Stashes changes in the .git file for temporaily hiding changed elements (make sure to run git add prior to stashing
 
 git stash apply Returns the stashed items
 
-View History
+### View History
 git log View previous commits, their messages, and ids
 
 git log <file name> View who changed a specific file
 
 git blame <file name> View who changed a specific file
 
-Reverting
+### Reverting
 git reset --hard HEAD Remove all changes and revert to the previous commit
 
 git checkout <file name> Remove changes made to a specific file, reverting it back to the previous commit
 
-Merge Conflicts
+### Merge Conflicts
 When you encounter a merge conflict, first... don't freak out. This just means you're being given the ability to choose which code you want to choose to go with.
 
-Sample Conflict
+### Sample Conflict
 You run git pull on a repo that has changes that conflict with your local copy.
 You're presented with the following error message:
 error: The following untracked working tree files would be overwritten by merge:
@@ -64,7 +57,7 @@ Aborting
 Natural Response
 large
 
-How to Fix a Merge Conflict
+### How to Fix a Merge Conflict
 It's actually not that hard to fix merge conflicts, simply run git status and it will show you where the conflict exists. An example conflict might look like this:
 
 <<<<<<< HEAD
@@ -81,10 +74,10 @@ git commit -m 'some commit message'
 git push
 And you will be good to go.
 
-Cloning
+### Cloning
 git clone <link to repo> Clone a repository from a remote source, such as GitHub
 
-Rebase
+### Rebase
 git rebase master While working on a branch you can bring in committed changes from another branch. This is helpful for ensuring that your feature branch can be cleanly merged with the master branch
 
 Temporarily was spelled incorrectly in the stashing changes
